@@ -28,7 +28,11 @@ class CLIAcceptance(unittest.TestCase):
 
     def cli(self, *args):
         env = dict(os.environ)
-        env["PYTHONPATH"] = str(ROOT / "src")
+        if env.get("GAGE_WINDOW_INSTALLED") == "1":
+            env.pop("PYTHONPATH", None)
+            env.pop("PYTHONHOME", None)
+        else:
+            env["PYTHONPATH"] = str(ROOT / "src")
         return subprocess.run(
             [sys.executable, "-m", "gage_window", *map(str, args)],
             cwd=self.base,

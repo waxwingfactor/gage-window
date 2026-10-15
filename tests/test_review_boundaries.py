@@ -16,7 +16,9 @@ from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+INSTALLED = os.environ.get("GAGE_WINDOW_INSTALLED") == "1"
+if not INSTALLED:
+    sys.path.insert(0, str(ROOT / "src"))
 from gage_window import core
 
 
@@ -28,7 +30,8 @@ class ReviewBoundaries(unittest.TestCase):
 
     def cli(self, *args):
         env = dict(os.environ)
-        env["PYTHONPATH"] = str(ROOT / "src")
+        if not INSTALLED:
+            env["PYTHONPATH"] = str(ROOT / "src")
         return subprocess.run(
             [sys.executable, "-m", "gage_window", *map(str, args)],
             cwd=self.base, env=env, text=True, encoding="utf-8",

@@ -3,6 +3,7 @@ import csv
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -28,6 +29,9 @@ for artifact in artifacts:
         run('-m', 'pip', 'install', '--no-deps', artifact)
         location = run('-c', 'import gage_window; print(gage_window.__file__)').strip()
         assert str(base / 'venv') in location, location
+        shutil.copytree(root / 'tests', base / 'tests', ignore=shutil.ignore_patterns('__pycache__'))
+        env['GAGE_WINDOW_INSTALLED'] = '1'
+        run('-m', 'unittest', 'discover', '-s', base / 'tests', '-v')
         run('-m', 'gage_window', 'example', 'example')
         run('-m', 'gage_window', 'analyze', 'example/project.json', '--out', 'report', expected=2)
         analysis = json.loads((base / 'report/analysis.json').read_text())
