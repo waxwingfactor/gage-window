@@ -23,6 +23,8 @@ This is a **conditional opportunity judgment**, not a claim that the market is e
 
 ## Documented problem and evidence limits
 
+A [September 2026 CyberMetrics forum discussion](https://forum.cybermetrics.com/t/weekly-poll-audit-readiness/323) contains a job shop's first-person report of difficulty associating many tools with many jobs for OOT analysis. The same thread explains existing GAGEtrak Crib/Where Used capabilities. This is direct evidence of an operational difficulty, not proof that a new product is needed or that native tools cannot solve it.
+
 [Database Providers' calibration workflow](https://www.databaseproviders.com/calibration-management-software-iso9001-as9100/), particularly “Why Check-In and Check-Out History Is Not Enough,” explains that custody history usually cannot prove which instrument produced an inspection result. Without exact device IDs, an organization may need to reconstruct incomplete records, consider a broader product population, or rely on assumptions. Its review-period discussion also identifies calibration checks, known damage, use history, and technical assessment as relevant evidence. This is a vendor's explanation of a practical problem, not independent evidence of its prevalence.
 
 Gage Window preserves that distinction: custody produces a possible overlap, never proof of measurement. Unknown identities and malformed relevant records remain visible. No matches mean no candidates were found in the supplied records; they do not establish that no unlogged use occurred. There is no claim of regulatory certification, safety assurance, technical correctness, or investigation closure.

@@ -25,4 +25,4 @@ The lead exercised wheel and source-distribution installation in separate fresh 
 
 The generated static report was actually rendered in the in-app browser at desktop and 390px mobile width. DOM measurements showed page scroll width equal to viewport width (390px); tables scroll within focusable regions. Tab focused the evidence table, and Right moved its horizontal scroll by 40px. Heading/table semantics and visible keyboard focus were inspected. This is a static local report, not a hosted interactive application. No claim of a complete accessibility audit is made.
 
-Actual public artifact verification remains a separate post-publication step; see release-verification.md for the final results when available.
+A separate AI agent subsequently verified the actual published wheel and sdist; see release-verification.md for exact revisions, hashes, environments and observed results.

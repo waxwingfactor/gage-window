@@ -1,0 +1,242 @@
+{
+  "ci_run_url": "https://github.com/waxwingfactor/gage-window/actions/runs/38794207405",
+  "commit": "4a3b134764544a5f2e169f8d0f1b7f0d8b21a0aa",
+  "distribution_contents": {
+    "published_test_files": [
+      "test_acceptance.py",
+      "test_review_boundaries.py"
+    ],
+    "runtime_dependencies": [],
+    "sdist_required_docs_examples_tests_scripts_present": true,
+    "wheel_example_present": true
+  },
+  "environment": {
+    "machine": "arm64",
+    "python": "3.12.14",
+    "release": "25.5.0",
+    "system": "Darwin"
+  },
+  "exact_revision_required_ci_passed": true,
+  "finished_at_utc": "2026-10-15T19:32:39.427025+00:00",
+  "installations": [
+    {
+      "artifact": "gage_window-1.0.0-py3-none-any.whl",
+      "completed_case_decisions": 6,
+      "example_cases": 6,
+      "example_counts": {
+        "other_gage": 1,
+        "outside_window": 2,
+        "possible_overlap": 2,
+        "recorded_overlap": 1,
+        "unresolved": 3
+      },
+      "example_records": 9,
+      "installation": "fresh venv; noneditable; no PYTHONPATH or PYTHONHOME; isolated Python invocation",
+      "module_location_relative_to_venv": "lib/python3.12/site-packages/gage_window/__init__.py",
+      "module_outside_development_checkout": true,
+      "observations": [
+        {
+          "check": "fresh noneditable artifact installation",
+          "exit_code": 0
+        },
+        {
+          "check": "installed module identity",
+          "exit_code": 0
+        },
+        {
+          "check": "installed console entry point",
+          "exit_code": 0
+        },
+        {
+          "check": "installed constructed example creation",
+          "exit_code": 0
+        },
+        {
+          "check": "exact constructed example analysis",
+          "exit_code": 2
+        },
+        {
+          "check": "initial report reproduction",
+          "exit_code": 0
+        },
+        {
+          "check": "complete six-case human-status roundtrip",
+          "exit_code": 0
+        },
+        {
+          "check": "completed review reproduction",
+          "exit_code": 0
+        },
+        {
+          "check": "existing output refusal",
+          "exit_code": 1
+        },
+        {
+          "check": "new analysis after changed review window",
+          "exit_code": 2
+        },
+        {
+          "check": "stale decision rejection",
+          "exit_code": 1
+        },
+        {
+          "check": "unsupported naive-window rejection",
+          "exit_code": 1
+        },
+        {
+          "check": "relocated report with original input paths removed and sockets disabled",
+          "exit_code": 0
+        },
+        {
+          "check": "review with original reports and inputs removed and sockets disabled",
+          "exit_code": 0
+        },
+        {
+          "check": "tampered public-artifact report rejection",
+          "exit_code": 1
+        },
+        {
+          "check": "published acceptance and boundary tests against installed package",
+          "exit_code": 0
+        }
+      ],
+      "original_inputs_and_initial_report_paths_removed": true,
+      "published_tests_passed": 31,
+      "runtime_offline_guard": "Python socket constructors and create_connection disabled for principal and failure flows",
+      "version": "1.0.0"
+    },
+    {
+      "artifact": "gage_window-1.0.0.tar.gz",
+      "completed_case_decisions": 6,
+      "example_cases": 6,
+      "example_counts": {
+        "other_gage": 1,
+        "outside_window": 2,
+        "possible_overlap": 2,
+        "recorded_overlap": 1,
+        "unresolved": 3
+      },
+      "example_records": 9,
+      "installation": "fresh venv; noneditable; no PYTHONPATH or PYTHONHOME; isolated Python invocation",
+      "module_location_relative_to_venv": "lib/python3.12/site-packages/gage_window/__init__.py",
+      "module_outside_development_checkout": true,
+      "observations": [
+        {
+          "check": "fresh noneditable artifact installation",
+          "exit_code": 0
+        },
+        {
+          "check": "installed module identity",
+          "exit_code": 0
+        },
+        {
+          "check": "installed console entry point",
+          "exit_code": 0
+        },
+        {
+          "check": "installed constructed example creation",
+          "exit_code": 0
+        },
+        {
+          "check": "exact constructed example analysis",
+          "exit_code": 2
+        },
+        {
+          "check": "initial report reproduction",
+          "exit_code": 0
+        },
+        {
+          "check": "complete six-case human-status roundtrip",
+          "exit_code": 0
+        },
+        {
+          "check": "completed review reproduction",
+          "exit_code": 0
+        },
+        {
+          "check": "existing output refusal",
+          "exit_code": 1
+        },
+        {
+          "check": "new analysis after changed review window",
+          "exit_code": 2
+        },
+        {
+          "check": "stale decision rejection",
+          "exit_code": 1
+        },
+        {
+          "check": "unsupported naive-window rejection",
+          "exit_code": 1
+        },
+        {
+          "check": "relocated report with original input paths removed and sockets disabled",
+          "exit_code": 0
+        },
+        {
+          "check": "review with original reports and inputs removed and sockets disabled",
+          "exit_code": 0
+        },
+        {
+          "check": "tampered public-artifact report rejection",
+          "exit_code": 1
+        },
+        {
+          "check": "published acceptance and boundary tests against installed package",
+          "exit_code": 0
+        }
+      ],
+      "original_inputs_and_initial_report_paths_removed": true,
+      "published_tests_passed": 31,
+      "runtime_offline_guard": "Python socket constructors and create_connection disabled for principal and failure flows",
+      "version": "1.0.0"
+    }
+  ],
+  "limitations": [
+    "One local macOS/Python environment independently exercised published artifacts; CI supplies other OS/Python coverage.",
+    "Hashes and provenance match public GitHub records; they are not independent cryptographic publisher authentication.",
+    "Examples are constructed and no shop deployment or engineering decision was tested."
+  ],
+  "provenance_matched": true,
+  "public_assets": [
+    {
+      "github_api_digest_matched": true,
+      "name": "gage_window-1.0.0-py3-none-any.whl",
+      "public_url": "https://github.com/waxwingfactor/gage-window/releases/download/v1.0.0/gage_window-1.0.0-py3-none-any.whl",
+      "sha256": "fd3f0812a9af274965c68f440196885b613d8a345f91c0604f886b65a978e9fc",
+      "size_bytes": 15800
+    },
+    {
+      "github_api_digest_matched": true,
+      "name": "gage_window-1.0.0.tar.gz",
+      "public_url": "https://github.com/waxwingfactor/gage-window/releases/download/v1.0.0/gage_window-1.0.0.tar.gz",
+      "sha256": "1bdb4438a45d9998aabde0cb80784f601e28f6d87050ff0001b73ec23886fda1",
+      "size_bytes": 34247
+    },
+    {
+      "github_api_digest_matched": true,
+      "name": "PROVENANCE.json",
+      "public_url": "https://github.com/waxwingfactor/gage-window/releases/download/v1.0.0/PROVENANCE.json",
+      "sha256": "cb067144dfd9abac30d78c6b32656f663be20c93c13c9f3d93c1e893e4fa389b",
+      "size_bytes": 740
+    },
+    {
+      "github_api_digest_matched": true,
+      "name": "SHA256SUMS",
+      "public_url": "https://github.com/waxwingfactor/gage-window/releases/download/v1.0.0/SHA256SUMS",
+      "sha256": "ebf0759d310b8c95f6727cba0734aa005861e76f24c69936fa2e22fb38fc978c",
+      "size_bytes": 274
+    }
+  ],
+  "public_release_url": "https://github.com/waxwingfactor/gage-window/releases/tag/v1.0.0",
+  "public_tag_matched": true,
+  "published_sums_matched": true,
+  "release_published_at": "2026-10-15T19:31:47Z",
+  "repository": "https://github.com/waxwingfactor/gage-window",
+  "requests_authenticated": false,
+  "schema_version": 1,
+  "started_at_utc": "2026-10-15T19:32:13.756524+00:00",
+  "status": "verified",
+  "tag": "v1.0.0",
+  "verifier_sha256": "d7ad6440dfd34bc707c645050e850ba73894374327ebf55659054fb6e3e22df5"
+}
