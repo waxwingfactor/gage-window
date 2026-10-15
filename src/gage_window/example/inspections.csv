@@ -1,0 +1,8 @@
+Asset,Job,When,Sheet
+mic-17,JOB-100,2026-09-06T13:10:00Z,Inspection-100
+G-17,JOB-101,2026-09-05,Inspection-101
+G-17,JOB-099,2026-09-01T09:00:00Z,Inspection-099
+G-22,JOB-102,2026-09-08T09:00:00Z,Inspection-102
+unknown,JOB-103,2026-09-08T09:00:00Z,Inspection-103
+G-17,JOB-104,09/08/2026,Inspection-104
+G-17,,2026-09-08T09:00:00Z,Inspection-missing-job

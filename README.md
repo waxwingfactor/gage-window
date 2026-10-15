@@ -49,7 +49,8 @@ Output directories must be new. Input/schema failures return exit 1 and do not p
 
 ```sh
 python -m pip install build
-python -m unittest discover -s tests -v  # set PYTHONPATH=src for source checkout tests
+python -m pip install -e .
+python -m unittest discover -s tests -v
 python -m build
 ```
 

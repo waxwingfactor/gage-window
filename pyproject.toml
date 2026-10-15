@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gage-window"
+version = "1.0.0"
+description = "Conservative cross-export gauge-use evidence reconciliation"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{name = "gage-window contributors"}]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+gage-window = "gage_window.cli:main"
+
+[project.urls]
+Repository = "https://github.com/waxwingfactor/gage-window"
+Issues = "https://github.com/waxwingfactor/gage-window/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+gage_window = ["example/*"]
