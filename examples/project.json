@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "gages": ["G-17", "G-22"],
+  "aliases": {"mic-17": "G-17"},
+  "windows": [{"id": "INC-42", "gage_id": "G-17", "start": "2026-09-05T12:00:00Z", "end": "2026-09-10T16:00:00Z", "reason": "Constructed example: coordinator supplied investigation window; not a software recommendation."}],
+  "sources": [
+    {"name": "inspection export", "path": "inspections.csv", "kind": "direct", "columns": {"gage_id": "Asset", "work_id": "Job", "start": "When", "reference": "Sheet"}},
+    {"name": "crib export", "path": "checkouts.csv", "kind": "custody", "columns": {"gage_id": "Tool", "work_id": "Work order", "start": "Issued", "end": "Returned"}}
+  ]
+}
